@@ -52,7 +52,7 @@ export default function VideoSection() {
 
   const handleMouseLeave = (index: number) => {
     videoRefs.current[index]?.pause();
-    videoRefs.current[index].currentTime = 0; 
+    videoRefs.current[index].currentTime = 0;
   };
 
   return (
@@ -92,7 +92,7 @@ export default function VideoSection() {
                 loop
                 muted
                 playsInline
-                className="w-full h-72 md:h-[32rem] object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-72 lg:h-[26rem] 2xl:h-[32rem] object-cover group-hover:scale-110 transition-transform duration-500"
               >
                 <source src={video.videoUrl} type="video/mp4" />
                 Your browser does not support the video tag.

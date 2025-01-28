@@ -86,7 +86,7 @@ export default function AboutPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="relative h-[50vh] overflow-hidden "
+        className="relative h-[60vh] overflow-hidden "
       >
         <video
           autoPlay
@@ -117,12 +117,12 @@ export default function AboutPage() {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.8, duration: 0.8 }}
-        className=" px-4 py-6 md:py-12"
+        className=" px-4 py-6 md:py-12 space-y-4 lg:space-y-8"
       >
         <h1 className=" text-center text-3xl xl:text-6xl font-semibold leading-relaxed">
           Hey, I'm Alex
         </h1>
-        <p className=" w-full md:max-w-3xl mx-auto text-base text-center leading-relaxed">
+        <p className=" w-full md:max-w-3xl mx-auto text-base lg:text-xl text-center leading-relaxed">
           I believe that every project is unique and requires a tailored
           approach. I work closely with my clients to understand their vision
           and bring it to life through my lens. My style is a mix of creativity
@@ -137,7 +137,7 @@ export default function AboutPage() {
         transition={{ delay: 1, duration: 0.8 }}
         className=" px-4 py-6 md:py-12"
       >
-        <div className="relative w-full md:w-[80%] mx-auto h-72 xl:h-[700px]">
+        <div className="relative w-full md:w-[80%] mx-auto h-72 lg:h-[500px] 2xl:h-[700px]">
           <Image
             src="https://framerusercontent.com/images/Xb7TcyJ7I4QdFMfqRJNQ1iVS6k.jpg?scale-down-to=2048"
             alt="about info image"
@@ -175,12 +175,12 @@ export default function AboutPage() {
         className=""
       >
         <main className="">
-          <div className="  w-full container  mx-auto px-4 md:px-8 pb-16">
+          <div className="  w-full container  mx-auto px-4 md:px-8 pt-8 pb-16">
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-3xl md:text-5xl lg:text-6xl font-bold text-center mb-6 lg:mb-16"
+              className="text-3xl md:text-5xl 2xl:text-6xl font-bold text-center mb-6 lg:mb-16"
             >
               MY SERVICES
             </motion.h1>
@@ -217,7 +217,7 @@ export default function AboutPage() {
           </div>
         </main>
       </motion.section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

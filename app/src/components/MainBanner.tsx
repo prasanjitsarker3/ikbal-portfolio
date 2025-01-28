@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function MainBanner() {
   return (
@@ -31,7 +31,7 @@ export default function MainBanner() {
             delay: 0.2,
             ease: [0.16, 1, 0.3, 1], // custom ease curve
           }}
-          className="text-white text-5xl md:text-7xl 2xl:text-9xl font-bold tracking-tighter mb-6"
+          className="text-white text-5xl md:text-7xl xl:text-9xl font-bold tracking-tighter mb-6"
         >
           ALEXANDER SMITH
         </motion.h1>
@@ -46,10 +46,10 @@ export default function MainBanner() {
           }}
           className="text-white/90 text-lg md:text-xl max-w-2xl"
         >
-          I'm a Videographer & Photographer who specializes in capturing moments that tell compelling stories.
+          I'm a Videographer & Photographer who specializes in capturing moments
+          that tell compelling stories.
         </motion.p>
       </div>
     </div>
-  )
+  );
 }
-
