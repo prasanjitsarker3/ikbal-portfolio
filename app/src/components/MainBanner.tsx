@@ -29,9 +29,9 @@ export default function MainBanner() {
           transition={{
             duration: 0.8,
             delay: 0.2,
-            ease: [0.16, 1, 0.3, 1], // custom ease curve
+            ease: [0.16, 1, 0.3, 1],
           }}
-          className="text-white text-5xl md:text-7xl xl:text-9xl font-bold tracking-tighter mb-6"
+          className=" text-5xl md:text-7xl xl:text-[200px] text-white font-bold tracking-tighter mb-6"
         >
           ALEXANDER SMITH
         </motion.h1>

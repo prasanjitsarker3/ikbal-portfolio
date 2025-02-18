@@ -64,7 +64,7 @@ export default function VideoSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-white text-5xl md:text-6xl font-bold text-center mb-16"
+          className="text-white text-4xl lg:text-5xl 2xl:text-6xl font-bold text-center mb-16"
         >
           VIDEOS
         </motion.h1>
@@ -92,7 +92,7 @@ export default function VideoSection() {
                 loop
                 muted
                 playsInline
-                className="w-full h-72 lg:h-[26rem] 2xl:h-[32rem] object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-72 lg:h-[20rem] 2xl:h-[32rem] object-cover group-hover:scale-110 transition-transform duration-500"
               >
                 <source src={video.videoUrl} type="video/mp4" />
                 Your browser does not support the video tag.

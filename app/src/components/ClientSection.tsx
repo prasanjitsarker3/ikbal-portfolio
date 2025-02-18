@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface Client {
   id: number;
@@ -13,37 +14,37 @@ const clients: Client[] = [
   {
     id: 1,
     name: "Client 1",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20from%202025-01-24%2018-55-52-8X1ZgB8OAp0TMtbGOouuwug80vaeWn.png",
+    logo: "/client/connect.png",
     video: "/VideoS.mp4",
   },
   {
     id: 2,
     name: "Client 2",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20from%202025-01-24%2018-55-52-8X1ZgB8OAp0TMtbGOouuwug80vaeWn.png",
+    logo: "/client/Event.png",
     video: "/VideoS.mp4",
   },
   {
     id: 3,
     name: "Client 3",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20from%202025-01-24%2018-55-52-8X1ZgB8OAp0TMtbGOouuwug80vaeWn.png",
+    logo: "/client/Fashion.png",
     video: "/VideoS.mp4",
   },
   {
     id: 4,
     name: "Client 4",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20from%202025-01-24%2018-55-52-8X1ZgB8OAp0TMtbGOouuwug80vaeWn.png",
+    logo: "/client/connect.png",
     video: "/VideoS.mp4",
   },
   {
     id: 5,
     name: "Client 5",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20from%202025-01-24%2018-55-52-8X1ZgB8OAp0TMtbGOouuwug80vaeWn.png",
+    logo: "/client/Event.png",
     video: "/VideoS.mp4",
   },
   {
     id: 6,
     name: "Client 6",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20from%202025-01-24%2018-55-52-8X1ZgB8OAp0TMtbGOouuwug80vaeWn.png",
+    logo: "/client/Fashion.png",
     video: "/VideoS.mp4",
   },
 ];
@@ -94,15 +95,15 @@ export default function ClientsSection() {
 
               {/* Glassmorphic Overlay */}
               <div className="absolute inset-0 flex items-center justify-center bg-white/5 backdrop-blur-sm z-20 transition-opacity duration-300 group-hover:opacity-0">
-                <motion.h1
+                <motion.div
                   className="text-4xl font-bold text-white"
                   whileHover={{
                     scale: 1.1,
                     transition: { duration: 0.3 },
                   }}
                 >
-                  {client.name}
-                </motion.h1>
+                  <Image src={client.logo} alt="" width={200} height={200} />
+                </motion.div>
               </div>
             </motion.div>
           ))}
